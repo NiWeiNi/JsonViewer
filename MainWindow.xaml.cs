@@ -23,6 +23,10 @@ namespace JsonViewer
         public MainWindow()
         {
             InitializeComponent();
+            
+            Model model = new Model();
+            model.PopulateDataTable(test);
+
         }
     }
 }

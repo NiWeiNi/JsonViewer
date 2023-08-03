@@ -7,7 +7,19 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <DataGrid x:Name="dataGrid" AutoGenerateColumns="True">
+            
+        </DataGrid>
+        <ScrollViewer Height="250" VerticalScrollBarVisibility="Auto">
+            <StackPanel x:Name="test" />
+        </ScrollViewer>
 
-        
+        <WrapPanel Orientation="Horizontal">
+            <Button Content="OK" />
+            <Button Content="Cancel" />
+        </WrapPanel>
+    </StackPanel>
+
 
 </Window>
